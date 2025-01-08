@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    height: 620px;
+    background-image: url(./Background...gif);
+    background-color: black;
+    background-size:cover;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#answer {
+    font-size: 18px;
+    text-align: left;
+    color: #16d2e9;
+}
+
+*{
+    color: white;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
