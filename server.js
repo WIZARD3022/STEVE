@@ -1,10 +1,12 @@
 import express from 'express';
 import fetch from 'node-fetch'; // Use 'import' instead of 'require'
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 const port = 3000;
 
-const WOLFRAM_API_KEY = prompt("Enter your api key"); // Replace with your Wolfram Alpha API key
+const WOLFRAM_API_KEY = process.env.KEY; // Replace with your Wolfram Alpha API key
 // const WOLFRAM_API_KEY = 'GRAR32-KYXR62YVQA'; // Replace with your Wolfram Alpha API key
 
 app.use(express.static('public')); // Serve your frontend files from a 'public' folder
